@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/go-chi/chi/v5 v5.0.7
-	github.com/nubesk/binn v0.0.0-20221103161728-25e3cca36523
+	github.com/nubesk/binn v0.0.0-20221109135557-0c398c113e78
 	github.com/stretchr/testify v1.8.1
 )
 

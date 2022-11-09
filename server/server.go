@@ -55,26 +55,13 @@ func bottleGetHandlerFunc(bn *binn.Binn, logger *log.Logger) http.HandlerFunc {
 		if logger != nil {
 			logger.Printf("[out] connected")
 		}
-		ch := make(chan *binn.Bottle, 1)
-		err := bn.Subscribe(ch)
-		if err != nil {
-			w.WriteHeader(http.StatusInternalServerError)
-			return
-		}
+		rcv := binn.NewReceiver()
 	Loop:
 		for {
 			select {
 			case <-r.Context().Done():
 				break Loop
-			case b, ok := <-ch:
-				if !ok {
-					ch := make(chan *binn.Bottle, 1)
-					err := bn.Subscribe(ch)
-					if err != nil {
-						w.WriteHeader(http.StatusInternalServerError)
-						return
-					}
-				}
+			case b := <-rcv.Receive(bn):
 				body := bottleToResponse(b)
 				if bytes, err := json.Marshal(body); err == nil {
 					if _, err := w.Write(bytes); err != nil {
