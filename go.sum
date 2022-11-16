@@ -17,6 +17,10 @@ github.com/nubesk/binn v0.0.0-20221103161728-25e3cca36523 h1:fyNi94MZREgXoa6Mx/C
 github.com/nubesk/binn v0.0.0-20221103161728-25e3cca36523/go.mod h1:l/OHL5igXMRHrr9NXrj4TnFqYpcwZOFfg+EXE0xqOr4=
 github.com/nubesk/binn v0.0.0-20221109135557-0c398c113e78 h1:np8u0Vq1hYtnAtuoOZQRASLu6PTedrdTeKcfF90LelA=
 github.com/nubesk/binn v0.0.0-20221109135557-0c398c113e78/go.mod h1:l/OHL5igXMRHrr9NXrj4TnFqYpcwZOFfg+EXE0xqOr4=
+github.com/nubesk/binn v0.0.0-20221111151748-f70881cd022e h1:eqJZMhzYpZ3WdkOnQ9thI6cnuTg0AFjEmY//2RVWJds=
+github.com/nubesk/binn v0.0.0-20221111151748-f70881cd022e/go.mod h1:l/OHL5igXMRHrr9NXrj4TnFqYpcwZOFfg+EXE0xqOr4=
+github.com/nubesk/binn v0.0.0-20221113124340-40fe752396d4 h1:moOnjd3ikHp/6cSyPKL9Q+Vl03dOk/x22TjfIT1Ez68=
+github.com/nubesk/binn v0.0.0-20221113124340-40fe752396d4/go.mod h1:l/OHL5igXMRHrr9NXrj4TnFqYpcwZOFfg+EXE0xqOr4=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
