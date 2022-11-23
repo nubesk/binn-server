@@ -7,10 +7,12 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/nubesk/binn"
 	"github.com/nubesk/binn-server/server/handler"
+	"github.com/nubesk/binn-server/server/middleware"
 )
 
 func New(bn *binn.Binn, addr string, logger *log.Logger) *http.Server {
 	r := chi.NewRouter()
+	r.Use(middleware.LoggingMiddleware(logger))
 	r.Get("/", handler.GetHandlerFunc(bn, logger))
 	r.Post("/", handler.PostHandlerFunc(bn, logger))
 	r.Get("/stream", handler.GetStreamHandlerFunc(bn, logger))
